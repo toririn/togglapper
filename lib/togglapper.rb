@@ -1,5 +1,7 @@
-require "togglapper/version"
+require "togglapper/client_module"
 
 module Togglapper
-  # Your code goes here...
+  class Client
+    include Togglapper::ClientModule
+  end
 end

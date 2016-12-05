@@ -11,4 +11,12 @@ require "togglapper"
 # Pry.start
 
 require "irb"
-IRB.start
+require "pry"
+require "pry-rails"
+require "pry-byebug"
+#IRB.start
+
+client =  Togglapper::Client.new
+client.summary_by_tags("#2661")
+binding.pry
+puts "end"
